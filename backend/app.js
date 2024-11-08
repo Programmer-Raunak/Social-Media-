@@ -21,7 +21,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors({
-  origin:[],
+  origin:["https://social-media-seven-amber.vercel.app/"],
   method:["POST","GET"],
   credentials:true
 }));
